@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./last.css">
     <title>第1章ラスト課題</title>
 </head>
-<body>
-    
+
+<body onload=init();>
+    <h1>書いたものを保存、読み込み、出力できるメモです。</h1>
+    <form name="form">
+        <textarea id="Memo" name="Memo"></textarea>
+        <p>
+            <input type="button" value="保存" onclick=save();></input>
+            <input type="button" value="読込" onclick=load();></input>
+            <input type="button" value="ファイル出力" onclick=output();></input>
+        </p>
+        <div id="listPare" name="listPare">
+        </div>
+        <script type="text/javascript" src="./last.js"></script>
+    </form>
 </body>
+
 </html>
